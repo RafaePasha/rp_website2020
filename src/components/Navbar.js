@@ -26,7 +26,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     width: 250,
-    background: "#2b2a2a",
+    background: "#2F2559",
     height: "100%",
   },
 
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   ListItem: {
-    color: "#face0a",
+    color: "#03DFFE",
   },
 
   ListItemText: {
@@ -104,10 +104,10 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#222" }}>
+        <AppBar position="static" style={{ background: "#080111" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "#face0a" }} />
+              <ArrowBack style={{ color: "#03DFFE" }} />
             </IconButton>
             <Typography variant="h5" style={{ color: "white" }}>
               Portfolio

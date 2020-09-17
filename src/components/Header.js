@@ -6,17 +6,17 @@ import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 //CSS Styles
 const useStyles = makeStyles((theme) => ({
   Avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(17),
+    height: theme.spacing(17),
     margin: theme.spacing(1),
   },
 
   Title: {
-    color: "#face0a",
+    color: "#E8E7F4",
   },
 
   Subtitle: {
-    color: "white",
+    color: "#03DFFE",
     marginBottom: "3rem",
   },
 
@@ -33,23 +33,39 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const classes = useStyles();
+
   return (
     <Box className={classes.TypedContainer}>
       <Grid container justify="center">
         <Avatar className={classes.Avatar} src="" alt="Rafae Pasha" />
       </Grid>
 
-      <Typography className={classes.Title} variant="h4">
-        <Typed strings={["Rafae Pasha"]} typeSpeed={40} />
+      <Typography className={classes.Title} variant="h1">
+        Hi, I'm Rafae.
       </Typography>
 
       <br />
 
-      <Typography className={classes.Subtitle} variant="h5">
+      <Typography className={classes.Title} variant="h4" display="inline">
+        I'm a
+      </Typography>
+
+      <Typography
+        className={classes.Subtitle}
+        variant="h4"
+        display="inline"
+        style={{ marginLeft: 10 }}
+      >
         <Typed
-          strings={["Web Development", "Backend Development", "MERN Stack"]}
+          strings={[
+            "Full-stack developer.",
+            "Car enthusiast.",
+            "Gamer.",
+            "Musician.",
+          ]}
           typeSpeed={40}
-          backSpeed={60}
+          backSpeed={40}
+          cursorChar="_"
           loop
         />
       </Typography>
